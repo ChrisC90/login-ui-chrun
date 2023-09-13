@@ -1,120 +1,79 @@
-html {
-   height: 100%;
-}
-
 body {
-background-image: url("img/oracle.jpeg");
-background-repeat: no-repeat;
-background-position: right top;
-background-attachment: fixed;
-
+    background-color: #f2f2f2;
+    background-image: url("/pics/oracle.jpeg");
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.container {
-	background:rgba(58,63,68,0.5);
-  border-radius: 5px;
-  box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
-  width:450px;
-  display: flex;  
-  flex-direction: column;
+.wrap {
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.logo{
-  font-family: "museo-slab";  
-  font-size:20px;
-  text-align: center;
-  padding: 20px 20px 0;
-  margin:0;
+.form-header {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.login-item {
-	color: #ffff;
-	padding:25px 25px 0;
-	margin: 20px 20px 0;	
-	border-radius: 3px;
+.form-header h3 {
+    color: #333;
+    font-size: 24px;
 }
 
-input {
-  border: 0;
-  color: inherit;
-  font: inherit;
-  margin: 0;
-  outline: 0;
-  padding: 0;
-  -webkit-transition: background-color .3s;
-  transition: background-color .3s;
+.form-header p {
+    color: #777;
+    font-size: 14px;
 }
 
-.user:before {
-  content: '\f007';
-  font: 14px fontawesome;
-	color: #5b5b5b;
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
 }
 
-.lock:before {
-  content: '\f023';
-  font: 14px fontawesome;
-	color: #5b5b5b;
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
 }
 
-.form input[type="password"], .form input[type="text"], .form input[type="submit"] {
-  width: 100%;
+.form-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
 }
 
-.form-login label,
-.form-login input[type="text"],
-.form-login input[type="password"],
-.form-login input[type="submit"] {
-  border-radius: 0.25rem;
-  padding: 1rem;
-  color: #3A3F44;  
+.form-button:hover {
+    background-color: #0056b3;
 }
 
-.form-login label {
-  background-color: #222222;
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.form-footer {
+    text-align: center;
+    margin-top: 10px;
 }
 
-.form-login input[type="text"], .form-login input[type="password"] {
-  background-color: #ffffff;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-}
-.form-login input[type="text"]:focus, .form-login input[type="text"]:hover, .form-login input[type="password"]:focus, .form-login input[type="password"]:hover {
-  background-color: #eeeeee;
-}
-.form-login input[type="submit"] {
-  background-color: #00B9BC;
-  color: #eee;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.form-login input[type="submit"]:focus, .form-login input[type="submit"]:hover {
-  background-color: #197071;
-}
-.form-field {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 2rem;
+.form-footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-
-.hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-.text--center {
-  text-align: center;
+.form-footer a:hover {
+    text-decoration: underline; 
 }

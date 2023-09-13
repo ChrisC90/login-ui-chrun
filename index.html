@@ -7,26 +7,28 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-<div class="container">
-    <div class="logo">WELCOME TO ROARACLE!!!</div>
-    <div class="login-item">
-      <form action="" method="post" class="form form-login">
-        <div class="form-field">
-          <label class="user" for="login-username"><span class="hidden">Username</span></label>
-          <input id="login-username" type="text" class="form-input" placeholder="Username" required>
-        </div>
-
-        <div class="form-field">
-          <label class="lock" for="login-password"><span class="hidden">Password</span></label>
-          <input id="login-password" type="password" class="form-input" placeholder="Password" required>
-        </div>
-
-        <div class="form-field">
-          <input type="submit" value="Log in">
-        </div>
-      </form>
-    </div>
-</div>
-    
+    <div class="wrap">
+        <form class="login-form" action="">
+            <div class="form-header">
+                <h3>Login Form</h3>
+                <p>Login to access your dashboard</p>
+            </div>
+            <!--Email Input-->
+            <div class="form-group">
+                <input type="text" class="form-input" placeholder="email@example.com">
+            </div>
+            <!--Password Input-->
+            <div class="form-group">
+                <input type="password" class="form-input" placeholder="password">
+            </div>
+            <!--Login Button-->
+            <div class="form-group">
+                <button class="form-button" type="submit">Login</button>
+            </div>
+            <div class="form-footer">
+            Don't have an account? <a href="#">Sign Up</a>
+            </div>
+        </form>
+    </div><!--/.wrap-->
 </body>
 </html>
