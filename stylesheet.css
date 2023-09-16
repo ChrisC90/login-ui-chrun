@@ -24,7 +24,9 @@ body {
 }
 
 .form-header {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 20px;
 }
 
@@ -82,25 +84,16 @@ body {
     text-decoration: underline; 
 }
 
-footer p {
-    background-color: #FFD700;
-    font-size: 20px;
-    text-align: center;
-    color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-footer a :hover{
-    background-color: white;
+.social {
+    display: flex;
+    align-items: flex-start;
 }
 
 footer {
-    align-items: flex-end;
+    align-items: first baseline;
     color: #FFD700;
-}
-
-#address {
-    text-align: center;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: last baseline;
 }
